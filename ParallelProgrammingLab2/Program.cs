@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace ParallelProgrammingLab2;
 
-Console.WriteLine("Hello, World!");
+internal static class Program
+{
+    private static void Main()
+    {
+        var subscribers = InputFileReader.Read("input.txt", System.Text.Encoding.UTF8);
+        
+        var phonebook = new Phonebook(subscribers.ToArray());
+        
+        
+    }
+}
